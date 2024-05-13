@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">sec</string>
+    <string name="hello">ПРИВЕТ</string>
+    <string name="enjoy">Наслаждайся отборочными.</string>
+    <string name="take_care">Будь внимателен.</string>
+    <string name="make_good">Делай хорошо.</string>
+    <string name="log_in_onboarding">Войти в аккаунт</string>
 </resources>
