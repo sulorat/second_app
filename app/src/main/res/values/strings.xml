@@ -5,4 +5,5 @@
     <string name="take_care">Будь внимателен.</string>
     <string name="make_good">Делай хорошо.</string>
     <string name="log_in_onboarding">Войти в аккаунт</string>
+    <string name="dont_have_acc">Еще нет аккаунта? Зарегистрируйтесь</string>
 </resources>
