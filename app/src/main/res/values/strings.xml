@@ -6,4 +6,10 @@
     <string name="make_good">Делай хорошо.</string>
     <string name="log_in_onboarding">Войти в аккаунт</string>
     <string name="dont_have_acc">Еще нет аккаунта? Зарегистрируйтесь</string>
+    <string name="sign_in_login">Sign in</string>
+    <string name="email_login">Email</string>
+    <string name="password_login">Пароль</string>
+    <string name="sign_in_login_but">Sign in</string>
+    <string name="register_login">Register</string>
+    <string name="profile_login">Профиль</string>
 </resources>
