@@ -11,10 +11,10 @@ class OnBoardingActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        setContentView(R.layout.onboarding)
 
     }
-    fun GoToSecAct(v: View?) {
+    fun GoToLogin(v: View?) {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
