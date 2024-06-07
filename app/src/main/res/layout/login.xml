@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/back_login">
+    android:background="@color/back_login"
+    android:orientation="vertical">
 
 
     <ImageView
@@ -16,48 +16,60 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_in_login"
         android:layout_marginStart="30dp"
-        android:textSize="30sp"
+        android:text="@string/sign_in_login"
         android:textColor="@color/white"
-    />
+        android:textSize="30sp" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/email_login"
-        android:textColorHint="@color/white"
         android:layout_marginStart="30dp"
         android:layout_marginTop="80dp"
-        />
+        android:hint="@string/email_login"
+        android:textColorHint="@color/white" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:width="300dp" />
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/password_login"
-        android:textColorHint="@color/white"
         android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
-        />
+        android:hint="@string/password_login"
+        android:textColorHint="@color/white" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:width="300dp" />
 
 
     <Button
         android:layout_width="330dp"
         android:layout_height="45dp"
-        android:text="@string/sign_in_login_but"
         android:layout_marginStart="30dp"
         android:layout_marginTop="70dp"
         android:background="@drawable/button_border"
-        android:textColor="@color/white"
-        />
+        android:text="@string/sign_in_login_but"
+        android:textColor="@color/white" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/register_login"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/white"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/register_login"
+        android:textColor="@color/white"
 
         />
 
@@ -65,11 +77,10 @@
     <Button
         android:layout_width="330dp"
         android:layout_height="45dp"
-        android:text="@string/profile_login"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/button_border"
-        android:textColor="@color/white"
-        />
+        android:text="@string/profile_login"
+        android:textColor="@color/white" />
 
 </LinearLayout>

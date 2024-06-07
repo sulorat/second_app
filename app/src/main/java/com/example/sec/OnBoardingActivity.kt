@@ -17,5 +17,6 @@ class OnBoardingActivity : Activity() {
     fun GoToLogin(v: View?) {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
+        finish()
     }
 }
