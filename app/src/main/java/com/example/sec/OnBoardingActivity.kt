@@ -13,15 +13,15 @@ class OnBoardingActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.onboarding)
-        val button = findViewById<Button>(R.id.buttonID)
-        button.setOnClickListener {
+        val button = findViewById<Button>(R.id.ToLogin)
+        button.setOnClickListener {val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
 
         }
 
     }
     fun GoToLogin(v: View?) {
-        val intent = Intent(this, LoginActivity::class.java)
-        startActivity(intent)
-        finish()
+
     }
 }
