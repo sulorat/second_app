@@ -59,18 +59,22 @@
         android:textSize="16sp"
         />
 
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:orientation="horizontal"
         android:layout_marginStart="30dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="4"
         android:layout_marginTop="10dp"
-        tools:itemCount="1"
+        tools:itemCount="4"
         tools:listitem="@layout/feelings_item"
         />
 
+</LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="wrap_content"
