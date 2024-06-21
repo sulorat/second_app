@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.sec.OnBoardingActivity" />
-        <activity android:name="LoginActivity" />
+        <activity android:name=".LoginActivity" />
     </application>
 
 </manifest>

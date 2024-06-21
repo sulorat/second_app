@@ -47,7 +47,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:background="@drawable/button_border"
-        android:onClick="GoToLogin"
         android:text="@string/log_in_onboarding"
         android:textColor="@color/white" />
 
@@ -59,12 +58,6 @@
         android:text="@string/dont_have_acc"
         android:textColor="@color/white" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="205dp"
-        android:layout_marginBottom="0dp"
-        android:background="@color/back_login" />
 
 
 </LinearLayout>
