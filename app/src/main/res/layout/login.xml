@@ -32,10 +32,11 @@
 
 
     <EditText
+        android:id="@+id/login_email"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress" />
 
 
     <TextView
@@ -48,13 +49,14 @@
 
 
     <EditText
+        android:id="@+id/login_pass"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
-        android:inputType="textPassword"/>
-
+        android:inputType="textPassword" />
 
     <Button
+        android:id="@+id/ToMainMenu"
         android:layout_width="330dp"
         android:layout_height="45dp"
         android:layout_marginStart="30dp"

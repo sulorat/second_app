@@ -1,37 +1,38 @@
 package com.example.sec
 
 import android.app.Activity
-import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import com.example.sec.R.*
 
 
-class TokenStorage(private val context: Context) {
-    private val sharedPreferences: SharedPreferences =
-        context.getSharedPreferences("token_storage", Context.MODE_PRIVATE)
-
-    fun saveToken(token: String) {
-        sharedPreferences.edit().putString("token", token).apply()
-    }
-
-    fun getToken(): String? {
-        return sharedPreferences.getString("token", null)
-    }
-}
-
 class LoginActivity : Activity() {
-    private lateinit var tokenStorage: TokenStorage
-    override fun onCreate(savedInstanceState: Bundle?) {
 
+    private lateinit var pass : EditText
+    private lateinit var email : EditText
+    private lateinit var toMaim : Button
+    private lateinit var _save: SharedPreferences
+    public val savePass = "//////"
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(layout.login)
-        tokenStorage = TokenStorage(this)
-        if (tokenStorage.getToken() != null) {
+
+        pass = findViewById(R.id.login_pass)
+        email = findViewById(R.id.login_email)
+        toMaim = findViewById(R.id.ToMainMenu)
+
 
     }
 
-
-
+    private fun saveData(){
+        _save = getSharedPreferences( "MyPref", MODE_PRIVATE)
+        val editor = _save.edit()
+        editor.putString(savePass, pass.text.toString())
+        editor.apply()
+        Toast.makeText(this, "Pass saved", Toast.LENGTH_SHORT).show()
+    }
 
 }
