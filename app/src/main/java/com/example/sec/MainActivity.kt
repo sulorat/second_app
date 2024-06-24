@@ -13,18 +13,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.splashscreen)
 
         android.os.Handler().postDelayed({
-            logAct = LoginActivity()
-            val sPref = getSharedPreferences("MyPref", MODE_PRIVATE)
-            val savedPass = sPref.getString(logAct.savePass,"")
-            if(savedPass !="//////"){
-                val main = Intent(this, FullMainActivity::class.java)
-                startActivity(main)
+            try {
+                logAct = LoginActivity()
+                val sPref = getSharedPreferences("MyPref", MODE_PRIVATE)
+                val savedPass = sPref.getString(logAct.savePass, "")
+                if (savedPass != "//////") {
+                    val main = Intent(this, FullMainActivity::class.java)
+                    startActivity(main)
+                }
             }
-            val onBoard = Intent(this, OnBoardingActivity::class.java)
-            startActivity(onBoard)
-
-            finish()
+            catch (ex:Exception) {
+                val onBoard = Intent(this, OnBoardingActivity::class.java)
+                startActivity(onBoard)
+                finish()
+            }
         }, 3000)
+
 
     }
 }

@@ -1,6 +1,7 @@
 package com.example.sec
 
 import android.app.Activity
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
@@ -25,14 +26,21 @@ class LoginActivity : Activity() {
         toMaim = findViewById(R.id.ToMainMenu)
 
 
+        toMaim.setOnClickListener {
+            saveData()
+            val intent = Intent(this, FullMainActivity::class.java)
+
+            startActivity(intent)
+        }
     }
 
-    private fun saveData(){
-        _save = getSharedPreferences( "MyPref", MODE_PRIVATE)
-        val editor = _save.edit()
-        editor.putString(savePass, pass.text.toString())
-        editor.apply()
-        Toast.makeText(this, "Pass saved", Toast.LENGTH_SHORT).show()
-    }
+        private fun saveData() {
+            _save = getSharedPreferences("MyPref", MODE_PRIVATE)
+            val editor = _save.edit()
+            editor.putString(savePass, pass.text.toString())
+            editor.apply()
+            Toast.makeText(this, "Pass saved", Toast.LENGTH_SHORT).show()
+        }
+
 
 }
